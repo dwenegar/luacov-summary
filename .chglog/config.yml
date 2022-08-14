@@ -1,0 +1,70 @@
+style: github
+template: CHANGELOG.tpl.md
+info:
+  title: CHANGELOG
+  repository_url: https://github.com/dwenegar/luacov-summary
+options:
+  commits:
+    filters:
+      type:
+        - breaking
+        - feature
+        - fix
+        - refactor
+        - performance
+        - maintenance
+        - build
+        - ci
+        - test
+        - example
+        - doc
+        - localization
+        - translation
+        - accessibility
+        - deps
+        - misc
+  commit_groups:
+    sort_by: Custom
+    title_maps:
+      breaking: 🚨 Breaking Changes
+      feature: ✨ New Features
+      fix: 🐛 Bug Fixes
+      refactor: ♻️ Refactoring
+      performance: ⚡️ Performance
+      maintenance: 🧰 Maintenance
+      build: 📦 Build
+      ci: 🧰 Maintenance
+      test: 🚦 Tests
+      example: 🛠 Examples
+      doc: 📚 Documentation
+      localization: 🌐 Localization
+      accessibility: ♿️ Accessibility
+      deps: 📦 Dependencies
+      chore: 🏗 Chores
+    title_order:
+      - breaking
+      - feature
+      - fix
+      - refactor
+      - performance
+      - maintenance
+      - build
+      - ci
+      - test
+      - example
+      - doc
+      - docs
+      - localization
+      - translation
+      - accessibility
+      - deps
+      - misc
+  header:
+    pattern: "^(\\w*)(?:\\(([\\w\\$\\.\\-\\*\\s]*)\\))?\\:\\s(.*)$"
+    pattern_maps:
+      - Type
+      - Scope
+      - Subject
+  notes:
+    keywords:
+      - BREAKING CHANGE
